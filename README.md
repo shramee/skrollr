@@ -373,13 +373,13 @@ When `forceHeight` is set to false, `scale` is ignored.
 
 `scale` does only affect key frames in absolute mode, e.g. `data-500` but not `data-top`.
 
-###forceHeight=true
+### forceHeight=true
 
 `true`: Make sure the document is high enough that all key frames fit inside. Example: You use `data-1000`, but the content only makes the document 500px high. skrollr will ensure that you can scroll down the whole 1000px. Or if you use relative mode, e.g. `data-top-bottom`, skrollr will make sure the bottom of the element can actually reach the top of the viewport.
 
 `false`: Don't manipulate the document and just keep the natural scrollbar.
 
-###mobileCheck=function() {...}
+### mobileCheck=function() {...}
 
 This option allows you to pass a function to skrollr overwriting the check for mobile devices. The function should return `true` when mobile scrolling should be used and `false` if not.
 
